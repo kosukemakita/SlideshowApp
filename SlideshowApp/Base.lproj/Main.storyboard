@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +10,45 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SlideshowApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vfE-TV-eXQ">
+                                <rect key="frame" x="165" y="694" width="84" height="68"/>
+                                <state key="normal" title="再生／停止"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FTn-MD-mZk">
+                                <rect key="frame" x="30" y="694" width="85" height="68"/>
+                                <state key="normal" title="戻る"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bix-ad-UO5">
+                                <rect key="frame" x="299" y="694" width="85" height="68"/>
+                                <state key="normal" title="進む"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="vfE-TV-eXQ" secondAttribute="bottom" constant="100" id="0Po-c2-G0k"/>
+                            <constraint firstItem="bix-ad-UO5" firstAttribute="leading" secondItem="vfE-TV-eXQ" secondAttribute="trailing" constant="50" id="3hM-WR-3pg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bix-ad-UO5" secondAttribute="trailing" constant="30" id="Ajl-Jm-EaV"/>
+                            <constraint firstItem="FTn-MD-mZk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="Awq-jh-nCB"/>
+                            <constraint firstItem="bix-ad-UO5" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="650" id="Gu3-Wn-DcP"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="bix-ad-UO5" secondAttribute="bottom" constant="100" id="Mgy-Sp-W01"/>
+                            <constraint firstItem="FTn-MD-mZk" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="650" id="R4a-cY-ZW5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="FTn-MD-mZk" secondAttribute="bottom" constant="100" id="VWg-XG-rOH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vfE-TV-eXQ" secondAttribute="trailing" constant="165" id="azj-rh-Az2"/>
+                            <constraint firstItem="vfE-TV-eXQ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="650" id="cGD-H1-B3m"/>
+                            <constraint firstItem="vfE-TV-eXQ" firstAttribute="leading" secondItem="FTn-MD-mZk" secondAttribute="trailing" constant="50" id="fVq-VT-vlL"/>
+                            <constraint firstItem="vfE-TV-eXQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="165" id="reE-OO-BSS"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="139" y="114"/>
         </scene>
     </scenes>
 </document>
