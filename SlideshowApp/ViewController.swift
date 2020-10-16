@@ -10,10 +10,21 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var image1: UIImageView!
+    
+    @IBAction func MoveToNext(_ sender: Any) {
+    
+    }
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        let image = UIImage(named: "sunset")
+        image1.image = image
     }
+
 
 
 }

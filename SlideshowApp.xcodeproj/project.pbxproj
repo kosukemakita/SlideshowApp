@@ -13,6 +13,7 @@
 		65FB427325372669006F3203 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65FB427125372669006F3203 /* Main.storyboard */; };
 		65FB42752537266C006F3203 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65FB42742537266C006F3203 /* Assets.xcassets */; };
 		65FB42782537266C006F3203 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65FB42762537266C006F3203 /* LaunchScreen.storyboard */; };
+		65FB42822539CCE8006F3203 /* sunset.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 65FB42812539CCE8006F3203 /* sunset.jpeg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		65FB42742537266C006F3203 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		65FB42772537266C006F3203 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		65FB42792537266C006F3203 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		65FB42812539CCE8006F3203 /* sunset.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sunset.jpeg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			children = (
 				65FB426B25372669006F3203 /* AppDelegate.swift */,
 				65FB426D25372669006F3203 /* SceneDelegate.swift */,
+				65FB42812539CCE8006F3203 /* sunset.jpeg */,
 				65FB426F25372669006F3203 /* ViewController.swift */,
 				65FB427125372669006F3203 /* Main.storyboard */,
 				65FB42742537266C006F3203 /* Assets.xcassets */,
@@ -126,6 +129,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				65FB42782537266C006F3203 /* LaunchScreen.storyboard in Resources */,
+				65FB42822539CCE8006F3203 /* sunset.jpeg in Resources */,
 				65FB42752537266C006F3203 /* Assets.xcassets in Resources */,
 				65FB427325372669006F3203 /* Main.storyboard in Resources */,
 			);
