@@ -9,6 +9,14 @@
 import UIKit
 
 class ViewController: UIViewController {
+    @IBOutlet weak var nextImage: UIButton!
+    @IBOutlet weak var previousImage: UIButton!
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let zoomUpViewController:ZoomUpViewController = segue.destination as! ZoomUpViewController
+        imageView.image = imageArray[nowIndex]
+        
+    }
     
     @IBOutlet weak var imageView: UIImageView!
     
@@ -27,10 +35,14 @@ class ViewController: UIViewController {
         if (timer == nil) {
             
             timer = Timer.scheduledTimer(timeInterval: 2.0, target: self, selector: #selector(changeImage), userInfo: nil, repeats: true)
+            nextImage.isEnabled = false
+            previousImage.isEnabled = false
             
         } else {
             timer.invalidate()
             timer = nil
+            nextImage.isEnabled = true
+            previousImage.isEnabled = true
         }
         //        print(nowIndex)
     }

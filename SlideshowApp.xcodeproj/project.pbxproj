@@ -17,6 +17,7 @@
 		65FB42842539D046006F3203 /* aurora.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 65FB42832539D046006F3203 /* aurora.jpeg */; };
 		65FB42862539D0AD006F3203 /* nightsky.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 65FB42852539D0AD006F3203 /* nightsky.jpeg */; };
 		65FB42882539D0C5006F3203 /* nightsky2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 65FB42872539D0C5006F3203 /* nightsky2.jpeg */; };
+		65FB428C253B3151006F3203 /* ZoomUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65FB428B253B3151006F3203 /* ZoomUpViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		65FB42832539D046006F3203 /* aurora.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = aurora.jpeg; sourceTree = "<group>"; };
 		65FB42852539D0AD006F3203 /* nightsky.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = nightsky.jpeg; sourceTree = "<group>"; };
 		65FB42872539D0C5006F3203 /* nightsky2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = nightsky2.jpeg; sourceTree = "<group>"; };
+		65FB428B253B3151006F3203 /* ZoomUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoomUpViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 				65FB42872539D0C5006F3203 /* nightsky2.jpeg */,
 				65FB42812539CCE8006F3203 /* sunset.jpeg */,
 				65FB426F25372669006F3203 /* ViewController.swift */,
+				65FB428B253B3151006F3203 /* ZoomUpViewController.swift */,
 				65FB427125372669006F3203 /* Main.storyboard */,
 				65FB42742537266C006F3203 /* Assets.xcassets */,
 				65FB42762537266C006F3203 /* LaunchScreen.storyboard */,
@@ -156,6 +159,7 @@
 			files = (
 				65FB427025372669006F3203 /* ViewController.swift in Sources */,
 				65FB426C25372669006F3203 /* AppDelegate.swift in Sources */,
+				65FB428C253B3151006F3203 /* ZoomUpViewController.swift in Sources */,
 				65FB426E25372669006F3203 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

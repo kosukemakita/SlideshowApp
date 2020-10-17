@@ -60,11 +60,39 @@
                     </view>
                     <connections>
                         <outlet property="imageView" destination="LbY-lG-T1I" id="pdc-Jx-Dgh"/>
+                        <outlet property="nextImage" destination="FTn-MD-mZk" id="M0v-nL-c1E"/>
+                        <outlet property="previousImage" destination="bix-ad-UO5" id="Ged-ix-u7T"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="113.31521739130436"/>
+        </scene>
+        <!--Zoom Up View Controller-->
+        <scene sceneID="FzJ-CD-YvN">
+            <objects>
+                <viewController id="ckB-8T-cFs" customClass="ZoomUpViewController" customModule="SlideshowApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mCS-Sb-1lf">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RVr-6y-KS4">
+                                <rect key="frame" x="169" y="393" width="77" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="一覧に戻る"/>
+                                <connections>
+                                    <segue destination="IVe-8h-LqF" kind="unwind" unwindAction="unwind:" id="1Ge-vs-heV"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="fb5-P1-eNu"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zPl-YM-Ftg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="IVe-8h-LqF" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="872.46376811594212" y="103.53260869565219"/>
         </scene>
     </scenes>
 </document>
