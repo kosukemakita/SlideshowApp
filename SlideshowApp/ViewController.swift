@@ -39,11 +39,15 @@ class ViewController: UIViewController {
         changeImage()
     }
     @IBAction func previousImage(_ sender: Any) {
-        nowIndex -= 1
+        print("nowIndexは",nowIndex)
         if (nowIndex == 0) {
-            nowIndex = imageArray.count
+            nowIndex = imageArray.count - 1
+            imageView.image = imageArray[nowIndex]
         }
-        imageView.image = imageArray[nowIndex]
+        else {
+            nowIndex -= 1
+            imageView.image = imageArray[nowIndex]
+        }
     }
     
     
