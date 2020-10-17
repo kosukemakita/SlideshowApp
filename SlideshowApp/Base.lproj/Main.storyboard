@@ -18,16 +18,22 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vfE-TV-eXQ">
                                 <rect key="frame" x="165" y="550" width="84" height="86"/>
                                 <state key="normal" title="再生／停止"/>
+                                <connections>
+                                    <action selector="slideShowView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dEQ-6h-mHp"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FTn-MD-mZk">
                                 <rect key="frame" x="30" y="550" width="85" height="86"/>
                                 <state key="normal" title="戻る"/>
+                                <connections>
+                                    <action selector="previousImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Pnt-NC-DSI"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bix-ad-UO5">
                                 <rect key="frame" x="299" y="550" width="85" height="86"/>
                                 <state key="normal" title="進む"/>
                                 <connections>
-                                    <action selector="MoveToNext:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YBB-9C-RSG"/>
+                                    <action selector="nextImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="s4F-DB-olF"/>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="LbY-lG-T1I">
