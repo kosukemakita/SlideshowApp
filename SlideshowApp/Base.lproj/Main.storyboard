@@ -15,49 +15,46 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vfE-TV-eXQ">
-                                <rect key="frame" x="165" y="550" width="84" height="86"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vfE-TV-eXQ">
+                                <rect key="frame" x="101" y="606" width="77" height="30"/>
                                 <state key="normal" title="再生／停止"/>
                                 <connections>
                                     <action selector="slideShowView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dEQ-6h-mHp"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FTn-MD-mZk">
-                                <rect key="frame" x="30" y="550" width="85" height="86"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FTn-MD-mZk">
+                                <rect key="frame" x="30" y="606" width="31" height="30"/>
                                 <state key="normal" title="戻る"/>
                                 <connections>
                                     <action selector="previousImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Pnt-NC-DSI"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bix-ad-UO5">
-                                <rect key="frame" x="299" y="550" width="85" height="86"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bix-ad-UO5">
+                                <rect key="frame" x="353" y="606" width="31" height="30"/>
                                 <state key="normal" title="進む"/>
                                 <connections>
                                     <action selector="nextImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="s4F-DB-olF"/>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="LbY-lG-T1I">
-                                <rect key="frame" x="0.0" y="100" width="414" height="350"/>
+                                <rect key="frame" x="0.0" y="100" width="414" height="406"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="vfE-TV-eXQ" secondAttribute="bottom" constant="100" id="0Po-c2-G0k"/>
-                            <constraint firstItem="bix-ad-UO5" firstAttribute="leading" secondItem="vfE-TV-eXQ" secondAttribute="trailing" constant="50" id="3hM-WR-3pg"/>
                             <constraint firstItem="vfE-TV-eXQ" firstAttribute="top" secondItem="LbY-lG-T1I" secondAttribute="bottom" constant="100" id="93m-5I-adU"/>
+                            <constraint firstItem="bix-ad-UO5" firstAttribute="leading" secondItem="vfE-TV-eXQ" secondAttribute="trailing" constant="40" id="ACX-um-00O"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bix-ad-UO5" secondAttribute="trailing" constant="30" id="Ajl-Jm-EaV"/>
                             <constraint firstItem="FTn-MD-mZk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="Awq-jh-nCB"/>
-                            <constraint firstItem="bix-ad-UO5" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="550" id="Gu3-Wn-DcP"/>
+                            <constraint firstItem="bix-ad-UO5" firstAttribute="top" secondItem="LbY-lG-T1I" secondAttribute="bottom" constant="100" id="MN9-d6-6jH"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="bix-ad-UO5" secondAttribute="bottom" constant="100" id="Mgy-Sp-W01"/>
                             <constraint firstItem="LbY-lG-T1I" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Ow3-34-B5M"/>
-                            <constraint firstItem="FTn-MD-mZk" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="550" id="R4a-cY-ZW5"/>
+                            <constraint firstItem="vfE-TV-eXQ" firstAttribute="leading" secondItem="FTn-MD-mZk" secondAttribute="trailing" constant="40" id="Uly-fS-2ID"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="FTn-MD-mZk" secondAttribute="bottom" constant="100" id="VWg-XG-rOH"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vfE-TV-eXQ" secondAttribute="trailing" constant="165" id="azj-rh-Az2"/>
                             <constraint firstItem="LbY-lG-T1I" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="cDX-Rr-3Hj"/>
-                            <constraint firstItem="vfE-TV-eXQ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="550" id="cGD-H1-B3m"/>
-                            <constraint firstItem="vfE-TV-eXQ" firstAttribute="leading" secondItem="FTn-MD-mZk" secondAttribute="trailing" constant="50" id="fVq-VT-vlL"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="LbY-lG-T1I" secondAttribute="trailing" id="hWm-lz-LcF"/>
-                            <constraint firstItem="vfE-TV-eXQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="165" id="reE-OO-BSS"/>
+                            <constraint firstItem="FTn-MD-mZk" firstAttribute="top" secondItem="LbY-lG-T1I" secondAttribute="bottom" constant="100" id="yXW-F6-BEr"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -67,7 +64,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="137.68115942028987" y="113.83928571428571"/>
+            <point key="canvasLocation" x="137.68115942028987" y="113.31521739130436"/>
         </scene>
     </scenes>
 </document>

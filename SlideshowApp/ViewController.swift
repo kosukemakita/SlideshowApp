@@ -22,9 +22,8 @@ class ViewController: UIViewController {
         UIImage(named: "aurora.jpeg")!
     ]
     
-    
     @IBAction func slideShowView(_ sender: Any) {
-        
+        print("slideShowViewは",slideShowView)
         if (timer == nil) {
             
             timer = Timer.scheduledTimer(timeInterval: 2.0, target: self, selector: #selector(changeImage), userInfo: nil, repeats: true)
@@ -33,7 +32,7 @@ class ViewController: UIViewController {
             timer.invalidate()
             timer = nil
         }
-//        print(nowIndex)
+        //        print(nowIndex)
     }
     
     @IBAction func nextImage(_ sender: Any) {
@@ -60,7 +59,7 @@ class ViewController: UIViewController {
             nowIndex = 0
         }
         imageView.image = imageArray[nowIndex]
-        print(nowIndex)
+        print("nowIndex=",nowIndex)
     }
     
 }
