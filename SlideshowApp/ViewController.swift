@@ -22,7 +22,7 @@ class ViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let zoomUpViewController:ZoomUpViewController = segue.destination as! ZoomUpViewController
-        //        zoomUpViewController.zoomUpImageView = imageArray[nowIndex]
+                zoomUpViewController.selectedImage = imageArray[nowIndex]
         
     }
     
