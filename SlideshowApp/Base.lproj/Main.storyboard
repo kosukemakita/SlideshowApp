@@ -94,5 +94,31 @@
             </objects>
             <point key="canvasLocation" x="872.46376811594212" y="103.53260869565219"/>
         </scene>
+        <!--Zoom Up View Controller-->
+        <scene sceneID="v57-ya-l3z">
+            <objects>
+                <viewController id="REH-Ky-rDS" customClass="ZoomUpViewController" customModule="SlideshowApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zVn-BY-bUt">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oTQ-pX-0TY">
+                                <rect key="frame" x="169" y="393" width="77" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="一覧に戻る"/>
+                                <connections>
+                                    <segue destination="ql2-ij-Bsg" kind="unwind" unwindAction="unwind:" id="XuH-8K-Wsg"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="nMe-oQ-iAh"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5w1-v5-cne" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="ql2-ij-Bsg" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="882.46376811594212" y="113.53260869565219"/>
+        </scene>
     </scenes>
 </document>
