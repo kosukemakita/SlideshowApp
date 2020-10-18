@@ -11,10 +11,16 @@ import UIKit
 class ViewController: UIViewController {
     @IBOutlet weak var nextImage: UIButton!
     @IBOutlet weak var previousImage: UIButton!
+    @IBAction func tapView(_ sender: Any) {
+        print("タップされました")
+    }
+    
+    @IBAction func unwind(_ segue: UIStoryboardSegue) {
+    }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let zoomUpViewController:ZoomUpViewController = segue.destination as! ZoomUpViewController
-        imageView.image = imageArray[nowIndex]
+        //        zoomUpViewController.zoomUpImageView = imageArray[nowIndex]
         
     }
     

@@ -10,8 +10,13 @@ import UIKit
 
 class ZoomUpViewController: UIViewController {
 
-    @IBAction func unwind(_ segue: UIStoryboardSegue) {
-       }
+//    @IBAction func unwind(_ segue: UIStoryboardSegue) {
+//       }
+    
+//    var zoomUpImageView! = nil
+    
+    @IBOutlet weak var zoomUpImageView: UIImageView!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
