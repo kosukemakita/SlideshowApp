@@ -36,7 +36,7 @@
                                     <action selector="nextImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="s4F-DB-olF"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="LbY-lG-T1I">
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="LbY-lG-T1I">
                                 <rect key="frame" x="0.0" y="100" width="414" height="406"/>
                                 <gestureRecognizers/>
                                 <connections>
@@ -86,20 +86,27 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oTQ-pX-0TY">
-                                <rect key="frame" x="169" y="449" width="77" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oTQ-pX-0TY">
+                                <rect key="frame" x="120" y="536" width="174" height="30"/>
                                 <state key="normal" title="一覧に戻る"/>
                                 <connections>
                                     <segue destination="ql2-ij-Bsg" kind="unwind" unwindAction="unwind:" id="z6x-ZO-tzy"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="V1U-gx-asc">
-                                <rect key="frame" x="87" y="163" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="V1U-gx-asc">
+                                <rect key="frame" x="0.0" y="100" width="414" height="336"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="V1U-gx-asc" firstAttribute="top" secondItem="nMe-oQ-iAh" secondAttribute="top" constant="100" id="NpY-WV-PCq"/>
+                            <constraint firstItem="oTQ-pX-0TY" firstAttribute="leading" secondItem="nMe-oQ-iAh" secondAttribute="leading" constant="120" id="P2B-Oj-uzN"/>
+                            <constraint firstItem="oTQ-pX-0TY" firstAttribute="top" secondItem="V1U-gx-asc" secondAttribute="bottom" constant="100" id="Qkf-3d-zMc"/>
+                            <constraint firstItem="V1U-gx-asc" firstAttribute="leading" secondItem="nMe-oQ-iAh" secondAttribute="leading" id="Rcn-ta-0MU"/>
+                            <constraint firstItem="nMe-oQ-iAh" firstAttribute="trailing" secondItem="oTQ-pX-0TY" secondAttribute="trailing" constant="120" id="WvC-rk-agI"/>
+                            <constraint firstItem="nMe-oQ-iAh" firstAttribute="trailing" secondItem="V1U-gx-asc" secondAttribute="trailing" id="oGi-Mv-z0L"/>
+                            <constraint firstItem="nMe-oQ-iAh" firstAttribute="bottom" secondItem="oTQ-pX-0TY" secondAttribute="bottom" constant="150" id="pVT-Zp-wc8"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="nMe-oQ-iAh"/>
                     </view>
                     <navigationItem key="navigationItem" id="Kgg-94-p6l"/>
