@@ -18,12 +18,27 @@ class ViewController: UIViewController {
     
     
     @IBAction func unwind(_ segue: UIStoryboardSegue) {
+        if (timer == nil) {
+                   
+                   timer = Timer.scheduledTimer(timeInterval: 2.0, target: self, selector: #selector(changeImage), userInfo: nil, repeats: true)
+                   nextImage.isEnabled = false
+                   previousImage.isEnabled = false
+                   
+               } else {
+                   timer.invalidate()
+                   timer = nil
+                   nextImage.isEnabled = true
+                   previousImage.isEnabled = true
+               }
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let zoomUpViewController:ZoomUpViewController = segue.destination as! ZoomUpViewController
                 zoomUpViewController.selectedImage = imageArray[nowIndex]
-        
+        if timer != nil{
+                timer.invalidate()
+                timer = nil
+        }
     }
     
     @IBOutlet weak var imageView: UIImageView!
